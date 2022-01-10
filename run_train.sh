@@ -1,0 +1,4 @@
+export CUDA_VISIBLE_DEVICES="0,1,2,3" 
+python -m torch.distributed.launch --nproc_per_node 4 train_streaming.py
+# python -m torch.distributed.launch --nproc_per_node 3 train.py
+# python train_streaming.py
